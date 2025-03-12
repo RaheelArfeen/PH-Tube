@@ -64,7 +64,7 @@ const displayVideoDetails = (video) => {
             <img src="${video.thumbnail}"/>
         </figure>
         <div class="card-body">
-            <h2 class="card-title">Card Title</h2>
+            <h2 class="card-title">${video.title}</h2>
             <p>${video.description}</p>
             <div class="card-actions justify-end"></div>
         </div>
@@ -126,7 +126,7 @@ const displayVideos = (videos) => {
           </div>
 
           <div class="intro">
-            <h2 class="text-sm font-semibold">Midnight Serenade</h2>
+            <h2 class="text-sm font-semibold">${video.title}</h2>
             <p class="text-sm text-gray-400 flex gap-1">
              ${video.authors[0].profile_name}
               ${
